@@ -27,9 +27,6 @@ Classify regions of a cricket image into classes of background `[0]`, ball `[1]`
 ## Feature Engineering
 * **Combined color (HSV histograms & stats), texture (LBP), and shape/edge (HOG) features.**
 
-## Feature Engineering
-
-- *Combined color (HSV histograms & stats), texture (LBP), and shape/edge (HOG) features.*
 
 | Object | Challenge Scenario | HOG Fails (individually) Because | HSV Fails (individually) Because | LBP Fails (individually) Because |
 | :--- | :--- | :--- | :--- | :--- |
