@@ -27,15 +27,15 @@ Classify regions of a cricket image into classes of background `[0]`, ball `[1]`
 ## Feature Engineering
 * **Combined color (HSV histograms & stats), texture (LBP), and shape/edge (HOG) features.**
 
-+--------+---------------------------+--------------------------------------+--------------------------------------+--------------------------------------+
-| Object | Challenge Scenario        | HOG Fails (individually) Because     | HSV Fails (individually) Because     | LBP Fails (individually) Because     |
-+--------+---------------------------+--------------------------------------+--------------------------------------+--------------------------------------+
-| Bat    | Horizontal/Angular Swings | Gradient orientation flips 90°.      | Works okay, but area is small.       | Motion blur destroys pattern.        |
-+--------+---------------------------+--------------------------------------+--------------------------------------+--------------------------------------+
-| Ball   | Crowd Background          | Too many "round" shapes in crowd.    | Red shirts in crowd mimic ball.      | Crowd texture mimics ball noise.     |
-+--------+---------------------------+--------------------------------------+--------------------------------------+--------------------------------------+
-| Stumps | Occlusion                 | "3-poles" shape is blocked/merged.   | Works well if any wood is visible.   | Leg pads have similar texture.       |
-+--------+---------------------------+--------------------------------------+--------------------------------------+--------------------------------------+
+## Feature Engineering
+
+- *Combined color (HSV histograms & stats), texture (LBP), and shape/edge (HOG) features.*
+
+| Object | Challenge Scenario | HOG Fails (individually) Because | HSV Fails (individually) Because | LBP Fails (individually) Because |
+| :--- | :--- | :--- | :--- | :--- |
+| **Bat** | Horizontal/Angular Swings | Gradient orientation flips 90°. | Works okay, but area is small. | Motion blur destroys pattern. |
+| **Ball** | Crowd Background | Too many "round" shapes in crowd. | Red shirts in crowd mimic ball. | Crowd texture mimics ball noise. |
+| **Stumps** | Occlusion | "3-poles" shape is blocked/merged. | Works well if any wood is visible. | Leg pads have similar texture. |
 
 ## Challenges
 
